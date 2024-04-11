@@ -4,7 +4,7 @@
 ## Features
 ### Sensor
 - Very good linearity over 1mm (centred on ~1.75)
-- Good linearity over 2-3mm (for potential 3mm filament compatibility, never used that myself)
+- Good linearity over 2-3mm (3mm filament is theoretically compatable, but remains untested)
 - No thermal drift on the sensor
 - Low drag
 ### Software
@@ -20,12 +20,12 @@ I mainly started this project ages ago because my local filament manufacturer do
 ## BOM
 ### Electronics
 - 1x Sensor PCB
-- 1x JST PH 4pin female cable (or crimping kit, or you can just solder wires to the pcb if you don't want to use jst ph)
+- 1x JST PH 4pin female cable
 ### Mechanical
 - 2x 6804 ball bearing
 - 2x 6x3mm OR 1x 6x6mm magnet (if you can, get SmCO ones, they have less thermal drift)
 - 2x 5x15 coil spring, 0.6mm wire diameter OR 8x 6x3mm neodymium magnets, the cheap kind
-- 8x m3x8 Socket head screw (other heads work too)
+- 8x m3x8 screws
 ### Tools
 - Fine-ish sanding pad/sandpaper
 - Pliers
@@ -43,44 +43,44 @@ Except for MainBody the parts **need to be printed on a smooth buildplate**.
 Use at least 3 perimeters and 5 top and bottom layers.
 
 # Build
-This is kind of a precision instrument and the quality of the final result heavily depends on how well it was asembled. Unfortunately this involves sanding.
+This is kind of a precision instrument and the quality of the final result heavily depends on how well it was assembled. Unfortunately this involves sanding.
 ![All the parts layed out](Images/AllParts.jpg)
-Imagine the 2 m3x6 screws on this picture are m3x8 too
+Pretend the two m3x6 screws on this picture are also m3x8
 
 ## Cleaning up MainBody
 Make sure the walls of the sliding surface on the bottom and the sides are smooth and have nothing sticking out. In most cases this should be fine off the printer but in this one there was a little defect in the walls. Also make sure the top surface for the lid is smooth and flat.
 ![Defect in MainBody](Images/MainBodyDefect.jpg)
 ![Defect in MainBody sanded](Images/MainBodyDefectSanded.jpg)
-## Asembling the Plunger
+## Assembling the plunger
 Place the bearing on MainPlunger and place BearingTop on top of that.
 ![MainPlunger](Images/Plunger1.jpg)
 ![MainPlunger with BearingTop](Images/Plunger2.jpg)
-Take a piece of ABS (or whatever you used) filament cut about a 45 degree angle in the tip and push it through the pin hole. You may need to drill out the holes in Bearing top. Push them in most of the way, cut the filament a couple mm from the top and hammer it in the rest of the way. Once it is all the way in snip it of as flush as you can.
+Take a piece of the filament you printed with, sharpen the end, then push it through the pin hole. You may need to drill out the holes in BearingTop if the filament doesn't fit. Push them in most of the way, cut the filament a couple mm from the top, and hammer it in the rest of the way. Once it is all the way in snip it off as flush as you can.
 ![Plunger with pin in one side](Images/Plunger3.jpg)
-Screw the bearing down using an m3x8 Screw.
+Screw the bearing down using an m3x8 screw.
 ![Plunger with pin in one side](Images/Plunger4.jpg)
 Place your magnets (the nice ones if you got them) in the slot and gently (SmCO magnets are quite fragile and chip easily) press them all the way down, they should be a little bit below the surface of the part. They should be held in place pretty well. **If they don't sit in there snugly, glue them down using epoxy or something**, we don't wan't wobbly magnets.
 ![Magnet in slot](Images/Plunger5.jpg)
 ![Magnet in slot all the way down](Images/Plunger6.jpg)
 
 ## Fitting the plunger
-**Only sand with the sandpaper below the part, no one likes crunchy bearings**, also make sure you clean off the sanding dust so it doesn't get into the bearings.
+**Only sand with the sandpaper below the part** and avoid getting dust into the bearing, or it will seize and become crunchy. It is recommended to fix the sandpaper to a flat surface and move the part across the sandpaper. This avoids inadvertently making the part unlevel.
 
-Sand the sides of the plunger till it slides smoothly. You don't want to sand too much otherwise you'll get side to side play.
+Sand the sides of the plunger until it slides smoothly. You don't want to sand too much otherwise you'll get side to side play.
 ![Plunger sliding smoothly](Images/Plunger7.gif)
 
 *If you are using coil springs skip this step*
 
-Push 2 magnets into each of the outer holes on the plunger, both in the same direction (North facing backwards for example, it doesn't really matter if it's north or south but it should be the same on both sides). The inner holes remain unused (could be used for more magnets if for some reason more spring force is required)
+Push 2 magnets into each of the outer holes on the plunger, both facing in the same direction. The inner holes remain unused (could be used for more magnets if for some reason more spring force is required)
 ![Magnets in plunger](Images/Plunger8.jpg)
-Sand down the top of the plunger (the bottom should already be smooth) until You can freely shake it around with the lid closed. Start by just holding the lid closed by hand (only grip at the corners) and then when that works screw in the 2 middle screws and check again. You want to remove as little as necessary to get smooth motion but not a lot of play.
+Sand down the top of the plunger (the bottom should already be smooth) until you can freely shake it around with the lid closed. Start by just holding the lid closed by hand (only grip at the corners) and then when that works screw in the 2 middle screws and check again. You want to remove as little as possible so you get smooth motion and not a lot of play.
 ![Sanded Plunger](Images/Plunger9.jpg)
 ![Sensor closed for testing](Images/Plunger10.jpg)
 
 ## Putting it all together
 *If you are using coil springs skip this step*
 
-Put the other 2 stacks of magnets into the holes as shown. The plunger should be attracted to the back of the sensor body like in the second picture. The magnets should now work as a spring.
+Put the other 2 stacks of magnets into the holes as shown. The plunger should be attracted to the back of the sensor body like in the second picture. The magnets should now work as springs.
 ![Magnets on the plunger](Images/Plunger11.jpg)
 ![Magnets inserted in the body](Images/Plunger12.jpg)
 ![Magnets inserted in the body](Images/Plunger13.jpg)
@@ -101,7 +101,7 @@ Place the plunger into the body. It's normal that the bearings don't completely 
 Gently push the sensor board into the hole in the lid as shown.
 ![Lid with sensor](Images/Lid1.jpg)
 
-Cut a 45 degree tip into a piece of ABS filament and push it into the hole on the side of the lid, over the sensor and into the hole on the other side. Once you reach the entrance of the inner hole, cut the filament about 2mm from the side and hammer it the rest of the way in, it should be flush otherwise cut the rest off. Then repeat for the second hole.
+Push a sharpened piece of ABS filament into the hole on the side of the lid, over the sensor and into the hole on the other side. Once you reach the entrance of the inner hole, cut the filament about 2mm from the side and hammer it the rest of the way in, it should be flush otherwise cut the rest off. Then repeat for the second hole.
 
 ![Lid with sensor](Images/Lid2.jpg)
 ![Lid filament pin](Images/Lid3.jpg)
@@ -117,20 +117,20 @@ Make sure the sensor part is over the magnet in the plunger and close the lid us
 
 **Congratulation the sensor is built** 
 
-Stick some filament in it, check if the bearings are running smoothy and the plunger closes up right once you pull it back out.
+Stick some filament in it, check if the bearings are running smoothy and the plunger closes up correctly once you pull it back out.
 
 # Installation
 
 ## Wiring
 ![Sensor pins](Images/SensorPins.jpg)
-**If you are somehow still on a platform with 5V IO pins (atmel based boards for example like ramps and the old creality boards, if in doubt measure the voltage on the SDA pin before connecting) you are going to need a level shifter for SDA and SCL**
+**If you are somehow still on a platform with 5V IO pins you are going to need a level shifter for SDA and SCL. Examples include ATMEL based boards like ramps and the old creality boards. If in doubt measure the voltage on the SDA pin before connecting.**
 
-Find an available I2C port on yur mainboard and connect the sensor to it. While you can theoretically use any pins with software I2C, I recommend using HW I2C since the senor produces quite a bit of i2c traffic which would take up quite a lot of the mcus compute power.
+Find an available I2C port on yur mainboard and connect the sensor to it. While you can theoretically use any pins with software I2C, I recommend using HW I2C since the sensor produces quite a bit of I2C traffic which would take up quite a lot of the MCUs computing power.
 
 For example I use the I2C port on PB8 and PB9 on the octopus pro.
 ![Octopus pro i2c](Images/OctopusPins.jpg)
 
-Alternatively you could use a separate microcontroller like a pi pico or stm32 bluepill or anything else supported by klipper if you do not have any i2c pins available on your current board.
+Alternatively you could use a separate microcontroller like a Pi Pico, STM32 bluepill or anything else supported by Klipper.
 
 Simply connect the pins on the sensor to the corresponding ones on your board (GND to GND, 3.3V to 3.3V, SDA to SDA and SCL to SCL).
 
@@ -139,13 +139,11 @@ Make sure the wire is as short as necessary, the longer it is the more interfere
 ## Mounting
 While I do leave mounting as a bit of an exercise for the user I do supply a known working "reference design".
 
-Ultimately you just need to put it in the filament path but it turns out how makes quite a difference on the data it generates. For best results the filament path should be confined for 10-30cm before and after the sensor and slightly(going too extreme is going to cause the same problem) biased towards the fixed bearing on the sensor.
+Ultimately you just need to put the sensor in the filament path but the exact mounting method makes quite a difference on the data it generates. For best results the filament path should be constrained for about 10-30cm before and after the sensor, as well as pushed slightly towards the fixed bearing on the sensor. Failing to constrain the filament path should not hinder operation, but it will add a ton of noise to the data. Confining the filament path is recommended for this reason. 
 
 ![Mount example](Images/Mounting.jpg)
 
 I have included STLs for a 0.5mm offset mount for the sensor and tube holders that fit into 6mm wide 2020 channels as a starting point. If you design a nice mount for yourself feel free to submit it as a pull request.
-
-You can just hang the sensor off the spool holder, I have printed like that fo quite some time with no perceived issues but it will add a ton of noise to the data, so if at all possible, confining the filament path around the sensor is better.
 
 # Software
 ## Installing the software
@@ -183,7 +181,7 @@ oversize_diameter: 1.9
 pause_on_runout: true
 ```
 
-Replace ```i2c_bus``` with the one you are actually using. You can look up the names on mainsail by going to "Machine" then clicking the name of the mcu (in my case the main one and since I am using PB8 and PB9 it turns out tp be i2c1a). If your sensor isn't on the main mcu you'll also need to set ```i2c_mcu``` accordingly.
+Replace ```i2c_bus``` with the one you are actually using. You can look up the names on mainsail by going to "Machine" then clicking the name of the MCU. My case turned out to be I2C1a. If your sensor isn't on the main mcu you'll also need to set ```i2c_mcu``` accordingly.
 
 ![mcu](Images/mainsailMcu.jpg)
 ![bus names](Images/mainsailPins.jpg)
@@ -201,11 +199,11 @@ If you are curious you should now find the unique ID of your sensor in the logs 
 Check if you can read the sensor using '''MLX_QUERY_RAW SENSOR=mlx1''', this should give you a raw reading of the sensor.
 
 ## Calibration
-For calibration you'll need 2 reference pieces around the target size, I use 1.5mm and 2mm drill bits.
+For calibration you'll need 2 reference pieces around the target size, I used 1.5mm and 2mm drill bits.
 
-First measure your reference pieces, in my case the the 1.5mm drill bit measures at 1.485mm and the 2mm one at 1.995mm. Enter those values as ```cal_dia1``` and ```cal_dia2``` in your sensor config (no need to restart jet).
+First measure your reference pieces, in my case the 1.5mm drill bit measures at 1.485mm and the 2mm one at 1.995mm. Enter those values as ```cal_dia1``` and ```cal_dia2``` in your sensor config (no need to restart yet).
 
-Now gently put your first reference piece into the sensor, make sure it is nicely between the bearings and not getting caught somewhere else. Wiggle it around and push and pull a bit, then take a reading using ```MLX_QUERY_RAW SENSOR=mlx1 AVERAGING=100```, I got 30 for the 1.5mm sample. Note your value as ```raw_dia1```. Then repeat the whole thing for your second sample (in this case I got -15612) and note that in ```raw_dia2```.
+Now gently put your first reference piece into the sensor, making sure it is nicely between the bearings and not getting caught somewhere else. Wiggle it around and push and pull a bit, then take a reading using ```MLX_QUERY_RAW SENSOR=mlx1 AVERAGING=100```, I got 30 for the 1.5mm sample. Note your value as ```raw_dia1```. Then repeat the whole thing for your second sample (in this case I got -15612) and note that in ```raw_dia2```.
 
 ![1.5mm calibration piece in the sensor](Images/calibrationPiece1.jpg)
 
@@ -222,20 +220,20 @@ raw_dia2: -15612
 ```
 
 ## Verifying calibration
-Check if you calibration worked by putting your reference sample back in and calling ```QUERY_FILAMENT_WIDTH```, if it worked you should get the diameter of your reference piece, repeat with the other one and some filament.
+Check if your calibration worked by putting your reference sample back in and calling ```QUERY_FILAMENT_WIDTH```, if it worked you should get the diameter of your reference piece, repeat with the other one and some filament.
 
-Make sure the sensor reads less than ```runout_diameter``` when empty, adjust ```runout_diameter``` if necessary (though if the default value is too low, there may be assembly or calibration errors).
+Make sure the sensor reads less than ```runout_diameter``` when empty. Adjust ```runout_diameter``` if necessary (though if the default value is too low, there may be assembly or calibration errors).
 
-Set ```oversize_diameter``` so something below the thinnest diameter in your filament path, for dragon I would not go above 1.9mm, other hotends my be able to take more.
+Set ```oversize_diameter``` to something below the thinnest diameter in your filament path. For dragon I would not go above 1.9mm, other hotends my be able to take more.
 
 # Using filament width compensation
-So far you have a really fancy filament runout sensor that knows the diameter of the filament, now comes the interesting part, actually using filament width compensation.
+So far you have a really fancy filament runout sensor that knows the diameter of the filament. Next comes the interesting part, actually using filament width compensation.
 
 You can activate it by setting ```compensation_enabled``` to true or temporarily enable or disable compensation using the ```ENABLE_FILAMENT_WIDTH_COMPENSATION``` and ```DISABLE_FILAMENT_WIDTH_COMPENSATION``` commands.
 
-With filament width compensation you need to recalibrate your extrusion multiplier for your filaments, explaining how to do that is out of scope here. Keep in mind you do need to extruder at least ```measurement_delay``` before calibration actually kicks in, so don't try calibrating before that.
+With filament width compensation you need to recalibrate your extrusion multiplier for your filaments. Keep in mind you must extrude at least ```measurement_delay``` before calibration actually kicks in, so don't try calibrating before that.
 
-After that you should not have to worry about the actual diameter of you filament anymore.
+After that you should not have to worry about the actual diameter of your filament anymore.
 
 **Important: always clear the filament array after loading filament**
 
@@ -370,7 +368,7 @@ sensor:
 ### SET_FILAMENT_WIDTH_RUNOUT_DIAMETER
 ```SET_FILAMENT_WIDTH_RUNOUT_DIAMETER RUNOUT_DIAMETER=<dia>``` Temporarily sets the runout diameter
 
-# FAQ (Or more like anticipated questions)
+# FAQ (Or more like anticipated questions + a little man yelling at cloud )
 ## Why use such big bearings?
 Turns out accurately measuring linear displacement is the easy part of this hole thing (and that already was quite a journey). Turning filament width into linear displacement accurately is where it gets really complicated. The sensor started off a lot smaller, the early development version were using 4mm pins. that worked well on the test machine and it was very useful for figuring out the magnet and sensor arrangement and testing thermal drift and stuff but once actual filament got into play it got a bit more complicated. 
 
@@ -395,4 +393,5 @@ Other than that I have been using it as it is now for over a year and very simil
 - **Deuterious** for the nice blog post proving filament with compensation can be practical
 - **Whoever sent me the ti pdf** for making magnets make a bit more sense
 - **MiracuruZRH** for testing
+- **Blargedy** for proof-reading this monstrosity
 - **My glorious local filament manufacturer** for creating the reason to make this and providing extreme samples
