@@ -19,7 +19,7 @@ I mainly started this project ages ago because my local filament manufacturer do
 
 ## BOM
 ### Electronics
-- 1x Sensor PCB
+- 1x [Sensor PCB](PCB/README.md)
 - 1x JST PH 4pin female cable
 ### Mechanical
 - 2x 6804 ball bearing
