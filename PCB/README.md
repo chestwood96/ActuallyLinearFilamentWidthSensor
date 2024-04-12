@@ -16,5 +16,6 @@ ALFws_pcb.zip contains the manufacturing files for the pcb. At the time of writi
 - Solder on the sensor and it's capacitor.
 - Bridge one of the i2c address options (center to 0 or center to 1).
 - Solder on the jst ph socket.
+- Snip the legs of the jst ph socket to below the height of the sensor
 
 Done.
