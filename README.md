@@ -146,6 +146,11 @@ Ultimately you just need to put the sensor in the filament path but the exact mo
 I have included STLs for a 0.5mm offset mount for the sensor and tube holders that fit into 6mm wide 2020 channels as a starting point. If you design a nice mount for yourself feel free to submit it as a pull request.
 
 # Software
+
+## Disclaimer
+This version of the code requires Klipper commit [`272e815`](https://github.com/Klipper3d/klipper/commit/272e815522b0bc8e0806e052b73a5cc1af979cd7) or newer.  
+Using an older Klipper version may cause compatibility issues.
+
 ## Installing the software
 Copy **filament_width_sensor_hall_mlx90395.py** and **filament_width_compensation.py** from the "Software" folder into your klipper install under "klippy/extras/" and restart the klipper service.
 

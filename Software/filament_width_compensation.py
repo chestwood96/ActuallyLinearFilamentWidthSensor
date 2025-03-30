@@ -92,16 +92,16 @@ class FilamentWidthCompensation:
         runout = (not self.runout_active or reading > self.runout_dia) and (not self.oversize_active or reading < self.oversize_dia)
 
         if self.runout_delay <= 0:
-            self.runout_helper.note_filament_present(runout)
+            self.runout_helper.note_filament_present(eventtime, is_filament_present=runout)
         else:
             if runout:
                 self.runoutOccured = True
                 self.runoutPosition = current_epos + self.measurement_delay
             if self.runoutOccured and current_epos + self.runout_delay >= self.runoutPosition:
-                self.runout_helper.note_filament_present(False)
+                self.runout_helper.note_filament_present(eventtime, is_filament_present=False)
                 self.runoutOccured = False
             else:
-                self.runout_helper.note_filament_present(True)
+                self.runout_helper.note_filament_present(eventtime, is_filament_present=True)
 
         while len(self.filament_array) > 0 and self.filament_array[0][0] <= current_epos:
             self.filament_array.pop(0)
